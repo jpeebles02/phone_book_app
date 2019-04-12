@@ -1,0 +1,7 @@
+<h1> <img src ="https://f4v3i5t7.stackpathcdn.com/wp-content/uploads/2015/09/tumblr_m726gzr8Fn1qf1116o1_400.gif"></h1>
+<% @contacts.each do |contact| %>
+  <h4> Name: <%= contact.full_name %></h4>
+  <p2>Cell: <%= contact.phone_number %></p2><br>
+  <a href="/contacts/<%= contact.id %>">More Info</a>
+<% end %>
+
